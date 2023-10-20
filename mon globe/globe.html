@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe terrestre </title>
+    <style>
+          body{
+            background-color: dimgrey;
+          }
+          .plannet{
+            min-height: 100vh;
+          }
+          .terre{
+            position: relative;
+            width: 22rem;
+            height: 22rem;
+            background-image: radial-gradient(cyan,navy);
+            border-radius: 50%;
+            box-shadow: 0 0 .3rem black;
+            background: url(img2.jpg) 1280px -40px/ 100% 100%;
+            animation: rotate-earth 50s linear infinite;
+          }
+          @keyframes rotate-earth{
+            50%{
+              background-position: 0px 40px;
+              background-size: 120% 120%;
+            }
+          }
+          .ombre{
+            position: absolute;
+            bottom: -75px;
+            width: 23rem;
+            height: 2rem;
+            background-color: black;
+            border-radius: 50%;
+            filter: blur(10px);
+          }
+    </style>
+</head>
+<body>
+  <center>
+    <section class="planet">
+        <div class="terre">
+            <div class="ombre"></div>
+        </div>
+    </section>
+ </center>   
+</body>
+</html>
